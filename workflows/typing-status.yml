@@ -1,0 +1,15 @@
+name: Typing SVG
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  update-typing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Update SVG
+        run: echo "Typing SVG atualizado no README"
